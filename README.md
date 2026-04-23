@@ -104,6 +104,13 @@ When the app loads, the user starts on the home page and can move between sectio
 
 This project is configured for GitHub Pages deployment with Vite. The repository includes a GitHub Actions workflow that builds the app and publishes the production files automatically after pushes to `main`.
 
+For best GitHub compatibility, the project also includes:
+
+- GitHub Pages deployment through Actions
+- a `404.html` fallback for direct page loads
+- a `.nojekyll` file so GitHub Pages serves build files without Jekyll interference
+- a `.gitattributes` file to keep line endings consistent across Windows and GitHub
+
 ## Possible Improvements
 
 - Add persistent cart storage with local storage
