@@ -1,0 +1,227 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: rgba(8, 15, 27, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.22);
+}
+
+.brand-kicker,
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+}
+
+.nav-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+.nav-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.nav-pills button,
+.cart-badge,
+.card-button,
+.hero-actions button,
+.filters button,
+.deal-panel button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  background: linear-gradient(135deg, #f59e0b, #fb7185);
+  color: #fffdf8;
+  box-shadow: 0 16px 28px rgba(245, 158, 11, 0.22);
+}
+
+.nav-pills button.active {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+}
+
+.ghost-button {
+  background: transparent;
+  border: 1px solid rgba(15, 118, 110, 0.4);
+  color: #0f172a;
+  box-shadow: none;
+}
+
+.welcome-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem;
+  background: rgba(255, 248, 235, 0.75);
+  color: #6b3d00;
+}
+
+.welcome-banner span {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.panel {
+  background: rgba(255, 252, 246, 0.9);
+  color: #0f172a;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 24px 60px rgba(148, 163, 184, 0.18);
+}
+
+.hero-panel h2,
+.deal-panel h2,
+.filters h2,
+.cart-header h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+  margin-bottom: 0.85rem;
+}
+
+.hero-copy,
+.spotlight-panel p,
+.deal-panel p,
+.info-panel li,
+.empty-state,
+.card p {
+  color: #475569;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.25rem;
+}
+
+.spotlight-panel {
+  background: linear-gradient(180deg, #fff1d6 0%, #ffe4c7 100%);
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(220px, 1fr) auto;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.filters input {
+  width: 100%;
+  min-height: 3rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: rgba(8, 15, 27, 0.88);
+  color: #f8fafc;
+  padding: 1.4rem;
+  border-radius: 1.3rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+}
+
+.card strong,
+.deal-panel strong,
+.cart-header strong,
+.spotlight-panel strong {
+  font-size: 1.25rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(20, 184, 166, 0.18);
+  color: #5eead4;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.info-list {
+  display: grid;
+  gap: 0.8rem;
+  padding-left: 1rem;
+}
+
+.cart-panel {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.cart-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  background: #fff7ed;
+  border: 1px solid rgba(245, 158, 11, 0.18);
+}
+
+@media (max-width: 780px) {
+  .navbar,
+  .welcome-banner,
+  .cart-header {
+    flex-direction: column;
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-actions {
+    justify-content: flex-start;
+  }
+}
