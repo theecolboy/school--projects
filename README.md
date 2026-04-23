@@ -5,7 +5,7 @@ A simple shopping web application built with React and Vite. This project demons
 ## Repository Link
 
 GitHub repository: [https://github.com/theecolboy/school--projects](https://github.com/theecolboy/school--projects)
-Live link: [https://theecolboy.github.io/school--projects/](https://theecolboy.github.io/school--projects/)
+Live demo: [https://theecolboy.github.io/school--projects/](https://theecolboy.github.io/school--projects/)
 
 ## Project Description
 
