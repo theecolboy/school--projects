@@ -1,44 +1,43 @@
-# School Projects
+# Shopping App
 
-A simple shopping web application built with React and Vite. This project demonstrates how to create an interactive shopping interface using React hooks for navigation, filtering, featured offers, and cart management.
+A responsive shopping interface built with React and Vite. The project demonstrates practical use of React hooks to manage navigation, product filtering, rotating featured deals, and cart updates in a single-page application.
 
-## Repository Link
+## Live Demo
 
-GitHub repository: [https://github.com/theecolboy/school--projects](https://github.com/theecolboy/school--projects)
-Live demo: [https://theecolboy.github.io/school--projects/](https://theecolboy.github.io/school--projects/)
+- Repository: [school--projects](https://github.com/theecolboy/school--projects)
+- Live Site: [theecolboy.github.io/school--projects](https://theecolboy.github.io/school--projects/)
+- Main branch: `main`
 
-## Project Description
+## Overview
 
-This application simulates a small shopping platform with multiple sections inside one React app. Users can move between pages, search products, view current deals, add items to the cart, and see the total cost update instantly.
+This project simulates a small online shopping experience with four main sections:
 
-The project was built to practice practical React concepts in a clean and beginner-friendly way.
+- `Home` to introduce the app and highlight the featured product
+- `Shop` to browse products and search by name or category
+- `Deals` to display the current featured offer
+- `Cart` to review selected items and total cost
 
-## Main Features
+The app is designed as a school project to demonstrate state management, component composition, and interactive UI behavior using React.
 
-- Home page with a featured shopping message
-- Shop page with searchable products
-- Deals page with a rotating featured product
-- Cart page with selected items and total price
-- Dynamic page title updates
-- Automatic input focus on the shop search bar
-- Shared cart state across different sections
+## Key Features
 
-## How The App Works
+- Multi-section navigation without a routing library
+- Search products by name or category
+- Add items to cart instantly
+- Dynamic cart total calculation
+- Rotating featured deals
+- Auto-focus on the shop search input
+- Dynamic browser tab title updates
 
-When the application loads, the user lands on the home page where the project introduces the shopping experience and highlights a featured deal. From the navigation bar, the user can move to the shop page, deals page, or cart page.
+## React Concepts Demonstrated
 
-On the shop page, users can search for products by name or category and add items directly to the cart. On the deals page, the featured product rotates automatically after a few seconds to demonstrate dynamic updates with React hooks. The cart page displays all selected items together with the total amount.
+- `useState` for page navigation, cart state, search text, and featured deals
+- `useEffect` for title updates, timed deal rotation, and input focus behavior
+- `useMemo` for filtered product results
+- `useRef` for direct input focus control
+- Props for component communication between `App` and `HomePage`
 
-This structure shows how a React application can manage different views and shared data without needing a separate routing package.
-
-## React Hooks Used
-
-- `useState` for page navigation, cart items, search value, and featured deal state
-- `useEffect` for document title updates, rotating deals, and search input focus
-- `useMemo` for product filtering
-- `useRef` for direct access to the search input
-
-## Technologies Used
+## Tech Stack
 
 - React
 - Vite
@@ -60,12 +59,13 @@ shopping/
 |   |-- index.css
 |   `-- main.jsx
 |-- package.json
+|-- vite.config.js
 `-- README.md
 ```
 
-## Installation And Setup
+## Getting Started
 
-Install project dependencies:
+Install dependencies:
 
 ```bash
 npm install
@@ -77,7 +77,7 @@ Start the development server:
 npm run dev
 ```
 
-Build the project for production:
+Build for production:
 
 ```bash
 npm run build
@@ -89,51 +89,33 @@ Preview the production build:
 npm run preview
 ```
 
-## Screenshots
-
-You can add screenshots of the following pages to make the project presentation stronger:
-
-- Home page
-- Shop page
-- Deals page
-- Cart page
-
-Example markdown format:
-
-```md
-![Home Page](./screenshots/home-page.png)
-![Shop Page](./screenshots/shop-page.png)
-```
-
-## Product Categories Included
+## Sample Product Categories
 
 - Groceries
 - Home
 - Electronics
 - Care
 
-## Learning Outcomes
+## How It Works
 
-This project helped me practice:
+When the app loads, the user starts on the home page and can move between sections using the navigation buttons. The shop page allows product searching and adding items to the cart. The deals page rotates the featured product automatically after a few seconds, while the cart page displays all selected items and the total amount in Kenyan shillings.
 
-- creating reusable React components
-- passing props between components
-- managing application state with hooks
-- building interactive UI behavior
-- organizing a small React project structure
+## Deployment
 
-## Future Improvements
+This project is configured for GitHub Pages deployment with Vite. The repository includes a GitHub Actions workflow that builds the app and publishes the production files automatically after pushes to `main`.
 
-- connect the app to a real backend or API
-- store cart items in local storage
-- add product images for every item
-- improve responsiveness for more screen sizes
-- add checkout functionality
+## Possible Improvements
+
+- Add persistent cart storage with local storage
+- Connect products to a real API or backend
+- Add checkout and payment flow
+- Add product images for all items
+- Improve mobile responsiveness further
 
 ## Author
 
 Ndungu Kamande
 
-## Submission Note
+## Submission
 
-This project was created as a school assignment and uploaded to GitHub for submission and review.
+This repository was prepared and uploaded as a school project submission.
