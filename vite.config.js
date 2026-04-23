@@ -22,6 +22,7 @@ function printDevUrl() {
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/school--projects/',
   plugins: [react(), printDevUrl()],
   clearScreen: false,
 })
